@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jqury cdn  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- jqury cdn  -->
+
+    <!-- bootstrap icon cdn   -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap icon cdn   -->
+
+    <!-- bootstrap cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap cdn  -->
+
+    <!-- swiper slider cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- swiper slider cdn  -->
+    <!-- animated css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      header {
+        height: 900px;
+        width: 100%;
+        border: 1px solid black;
+        background: url(img/bg_1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: rgb(70, 67, 67);
+      }
+      #back4 {
+        height: 250px;
+        width: 100%;
+        border: 1px solid black;
+        background: url(img/bg_1.jpg);
+        background-position: center;
+        background-blend-mode: overlay;
+        background-color: rgb(33, 33, 33);
+      }
+      #back6 {
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 100px;
+        background: url(img/bg_2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: rgb(59, 57, 57);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header startc  -->
+
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><h3 class="ps-2 text-light">Unwind</h3>
+              <h6 class="text-light">HOTEL BOOKING</h6>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >ABOUT</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >ROOMS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >RESTO & BAR</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >BLOG</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >CONTACT</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <p class="text-center text-light fw-bold wow animate__animated animate__bounceInDown" id="p1">
+        ENJOY YOUR WONDERFUL HOLIDAYS WITH A GREAT LUXURY EXPERIENCE!
+      </p>
+      <h1 class="display-1 fw-bold text-light text-center fw-bold wow animate__animated animate__bounceInDown" id="h1">
+        Most Relaxing Place
+      </h1>
+      <button class="btn text-light fw-bold wow animate__animated animate__bounceInDown" type="button" id="btn1">
+        TAKE A TOUR
+      </button>
+      <button class="btn border fw-bold wow animate__animated animate__bounceInDown" type="button" id="btn2">LEARN MORE</button>
+    </header>
+    <!-- header over  -->
+
+    <!-- check start  -->
+
+    <div class="check">
+      <div class="row d-flex justify-content-center" id="main">
+        <div class="col-sm-12 col-md-2 pb-5" id="back1">
+          <h1 class="text-light fs-5 pt-5">CHECK-IN</h1>
+          <font class="pb-5"
+            ><i class="bi bi-calendar text-secondary"></i>
+            <font class="text-secondary ps-2 pb-5">Ceack-in-date</font></font
+          >
+        </div>
+        <div class="col-sm-12 col-md-2" id="back1">
+          <h1 class="text-light fs-5 pt-5">CHECK-OUT</h1>
+          <font class="pb-5"
+            ><i class="bi bi-calendar text-secondary"></i>
+            <font class="text-secondary ps-2 pb-5">Ceack-in-date</font></font
+          >
+        </div>
+        <div class="col-sm-12 col-md-2" id="back1">
+          <h1 class="text-light fs-5 pt-5">ROOMS</h1>
+          <font class="pb-5"
+            ><i class="bi bi-arrow-repeat text-secondary"></i>
+            <font class="text-secondary ps-2 pb-5">Suite</font></font
+          >
+        </div>
+        <div class="col-sm-12 col-md-2" id="back1">
+          <h1 class="text-light fs-5 pt-5">GUESTS</h1>
+          <font class="pb-5"
+            ><i class="bi bi-arrow-repeat text-secondary"></i
+            ><font class="text-secondary ps-2 pb-5">Ceack-in-date</font></font
+          >
+        </div>
+        <div class="col-sm-12 col-md-2" id="back2">
+          <h2 class="text-center fs-5 text-light" id="h2">CHECK</h2>
+          <h2 class="text-center fs-5 text-light">AVAILABILITY</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- check over  -->
+
+    <!-- about start  -->
+
+    <div class="about mt-5 pt-5">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-sm-12 col-lg-6">
+            <div class="row d-flex justify-content-evenly">
+              <div
+                class="col-sm-12 col-md-5 wow animate__animated animate__flipInY d-flex flex-column justify-content-center align-items-center mb-4"
+                id="back3"
+              >
+                <img
+                  src="img/pillow.png"
+                  alt=""
+                  id="img1"
+                  class="img-fluid mt-3 wow animate__animated animate__flipInY "
+                />
+                <h2 class="pt-2">Cozy Room</h2>
+                <p class="text-center pt-3 pb-3">
+                  Far far away, behind the word <br />mountains, far from the
+                  countries <br />Vokalia.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4">
+                <img src="img/f-services-2.jpg" alt="" class="wow animate__animated animate__flipInY" id="img2" />
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly">
+              <div class="col-6 mb-4">
+                <img src="img/f-services.jpg" alt="" class="wow animate__animated animate__flipInY" id="img2" />
+              </div>
+              <div
+                class="col-5 wow animate__animated animate__flipInY d-flex flex-column justify-content-center align-items-center mb-4"
+                id="back3"
+              >
+                <img
+                  src="img/special-offer.png"
+                  alt=""
+                  id="img1"
+                  class="img-fluid mt-3"
+                />
+                <h2 class="pt-2">Cozy Room</h2>
+                <p class="text-center pt-3 pb-3">
+                  Far far away, behind the word <br />mountains, far from the
+                  countries <br />Vokalia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6  ">
+            <h6 class="pt-5 mt-5 ps-3" id="h3">ABOUT US</h6>
+            <h1 class="display-3 pt-3 ps-3">
+              Unwind A Hotel <br />
+              Booking Agency
+            </h1>
+            <p class="pt-4 text-secondary ps-3">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and <br />
+              Consonantia, there live the blind texts. Separated they live in
+              Bookmarksgrove right at <br />
+              the coast of the Semantics, a large language ocean.
+            </p>
+            <button class="btn border ms-3" type="button" id="btn3">
+              BOOK YOUR ROOM NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about over  -->
+
+    <!-- UNWIND SERVICES start  -->
+
+    <div class="unwind mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="text-center">UNWIND SERVICES</h6>
+            <h1 class="text-center display-2">Explore Our Hotel Services</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-evenly mt-5 mb-5">
+          <div
+            class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__flipInY  d-flex flex-column justify-content-center align-items-center"
+            id="box1"
+          >
+            <img
+              src="img/free-wifi.png"
+              alt=""
+              id="img3"
+              class="img-fluid mt-4"
+            />
+            <h6 class="pt-3">Free WIFI</h6>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__flipInY d-flex flex-column justify-content-center align-items-center"
+            id="box1"
+          >
+            <img src="img/2.png" alt="" id="img3" class="img-fluid mt-4" />
+            <h6 class="pt-3">Free WIFI</h6>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__flipInY d-flex flex-column justify-content-center align-items-center"
+            id="box1"
+          >
+            <img src="img/3.png" alt="" id="img3" class="img-fluid mt-4" />
+            <h6 class="pt-3">Free WIFI</h6>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__flipInY d-flex flex-column justify-content-center align-items-center"
+            id="box1"
+          >
+            <img src="img/4.png" alt="" id="img3" class="img-fluid mt-4" />
+            <h6 class="pt-3">Free WIFI</h6>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-2 wow animate__animated animate__flipInY d-flex flex-column justify-content-center align-items-center"
+            id="box1"
+          >
+            <img src="img/5.png" alt="" id="img3" class="img-fluid mt-4" />
+            <h6 class="pt-3">Free WIFI</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNWIND SERVICES over   -->
+
+    <!-- small start  -->
+
+    <div class="small position-relative" id="back4">
+      <h1 class="fs-5" id="h3">FIND BEST HOTEL FOR LEAVING</h1>
+      <p class="fs-1" id="p3">
+        Find the Best Hotel in Your <br />
+        Next Vacation
+      </p>
+      <button class="btn border" id="btn4">BOOK NOW</button>
+    </div>
+
+    <!-- over  -->
+
+    <!-- rooms startv  -->
+
+    <div class="rooms mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="text-center">OUR ROOMS</h6>
+            <h1 class="text-center display-2">Featured Rooms</h1>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-12 col-lg-4 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <div
+                class="card-text d-flex flex-column justify-content-center align-items-center"
+                id="back5"
+              >
+                <h1 class="pt-5" id="h5">Suite Room</h1>
+                <p class="text-center pt-3 text-secondary">
+                  Far far away, behind the word mountains, far <br />
+                  from the countries Vokalia and Consonantia, <br />
+                  there live the blind texts.
+                </p>
+                <font class="pt-3 pb-3" id="h4"
+                  >$450 / NIGHT
+                  <button class="btn" type="button" id="btn5">
+                    BOOK NOW
+                  </button></font
+                >
+              </div>
+              <img src="img/room-1.jpg" alt="" class="" />
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <img src="img/room-2.jpg" alt="" class="" />
+
+              <div
+                class="card-text d-flex flex-column justify-content-center align-items-center"
+                id="back5"
+              >
+                <h1 class="pt-5" id="h5">Family Room</h1>
+                <p class="text-center pt-3 text-secondary">
+                  Far far away, behind the word mountains, far <br />
+                  from the countries Vokalia and Consonantia, <br />
+                  there live the blind texts.
+                </p>
+                <font class="pt-3 pb-3" id="h4"
+                  >$450 / NIGHT
+                  <button class="btn" type="button" id="btn5">
+                    BOOK NOW
+                  </button></font
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <div
+                class="card-text d-flex flex-column justify-content-center align-items-center"
+                id="back5"
+              >
+                <h1 class="pt-5" id="h5">Deluxe Room</h1>
+                <p class="text-center pt-3 text-secondary">
+                  Far far away, behind the word mountains, far <br />
+                  from the countries Vokalia and Consonantia, <br />
+                  there live the blind texts.
+                </p>
+                <font class="pt-3 pb-3" id="h4"
+                  >$450 / NIGHT
+                  <button class="btn" type="button" id="btn5">
+                    BOOK NOW
+                  </button></font
+                >
+              </div>
+              <img src="img/room-1.jpg" alt="" class="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- over  -->
+
+    <!-- WATCH OUR LUXURIOUS HOTEL start  -->
+
+    <div
+      class="watch d-flex flex-column justify-content-center align-items-center"
+      id="back6"
+    >
+      <h5 class="" id="h6">WATCH OUR LUXURIOUS HOTEL</h5>
+      <h1 class="display-4 text-light">Take A Tour</h1>
+      <i class="bi bi-fast-forward-circle-fill fs-1" id="icon1"></i>
+    </div>
+    <!-- over  -->
+
+    <!-- slider start  -->
+
+    <div class="slider">
+      <div class="row mt-5">
+        <div class="col-12 wow animate__animated animate__bounceInUp">
+          <h6 class="text-center">TESTIMONIAL</h6>
+          <h1 class="text-center display-2">Happy Guests</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5 mb-5">
+          <div class="col-12 wow animate__animated animate__bounceInUp">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bg-light">
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <img
+                        src="img/person_1.jpg"
+                        alt=""
+                        class="img-fluid rounded-circle ms-2"
+                        id="img5"
+                      />
+                    </div>
+
+                    <div class="col-8">
+                      <h5 class="pt-4">Roger Scott</h5>
+                      <span class="" id="h7">MARKETING MANAGER</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="p-4">
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-light">
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <img
+                        src="img/person_2.jpg"
+                        alt=""
+                        class="img-fluid rounded-circle ms-2"
+                        id="img5"
+                      />
+                    </div>
+
+                    <div class="col-8">
+                      <h5 class="pt-4">Roger Scott</h5>
+                      <span class="" id="h7">MARKETING MANAGER</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="p-4">
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-light">
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <img
+                        src="img/person_3.jpg"
+                        alt=""
+                        class="img-fluid rounded-circle ms-2"
+                        id="img5"
+                      />
+                    </div>
+
+                    <div class="col-8">
+                      <h5 class="pt-4">Roger Scott</h5>
+                      <span class="" id="h7">MARKETING MANAGER</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="p-4">
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-light">
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <img
+                        src="img/person_1.jpg"
+                        alt=""
+                        class="img-fluid rounded-circle ms-2"
+                        id="img5"
+                      />
+                    </div>
+
+                    <div class="col-8">
+                      <h5 class="pt-4">Roger Scott</h5>
+                      <span class="" id="h7">MARKETING MANAGER</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="p-4">
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide bg-light">
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <img
+                        src="img/person_2.jpg"
+                        alt=""
+                        class="img-fluid rounded-circle ms-2"
+                        id="img5"
+                      />
+                    </div>
+
+                    <div class="col-8">
+                      <h5 class="pt-4">Roger Scott</h5>
+                      <span class="" id="h7">MARKETING MANAGER</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="p-4">
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slider over  -->
+
+    <!-- counter start  -->
+
+    <div class="counter1" id="back7">
+      <div class="container">
+        <div class="row mt-5">
+          <div
+            class="col-sm-12 col-md-6 col-lg-3  wow animate__animated animate__bounceInUp display-4 mt-5 mb-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="counter mt-5" id="h7"> 38,900 </span>
+            <h2 class="mb-5 fs-5 text-secondary" id="h8"># of Happy Guests</h2>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 wow animate__animated animate__bounceInUp  text-light display-4 mt-5 mb-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="counter mt-5" id="h7"> 320 </span>
+            <h2 class="mb-5 fs-5 text-secondary" id="h8"># of Rooms</h2>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3  wow animate__animated animate__bounceInUp text-light display-4 mt-5 mb-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="counter mt-5" id="h7"> 1,000 </span>
+            <h2 class="mb-5 fs-5 text-secondary" id="h8"># of Staffs</h2>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-3 wow animate__animated animate__bounceInUp  text-light display-4 mt-5 mb-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="counter mt-5" id="h7"> 587 </span>
+            <h2 class="mb-5 fs-5 text-secondary" id="h8"># of Destination</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- counter over  -->
+
+    <!-- blog start  -->
+
+    <div class="blog">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h6 class="text-center">OUR BLOG</h6>
+          <h1 class="text-center display-2">Recent Blog</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-6 col-lg-3 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <img src="img/image_1.jpg" alt="" class="img-fluid mb-2" />
+              <div class="card-title">
+                <span class="ps-3 pt-4"
+                  >ADMIN DEC. 23, 2020
+                  <font class="pt-4" id="h7">3 COMMENTS</font></span
+                >
+              </div>
+              <div class="card-text">
+                <p class="ps-3 fs-4" id="h9">
+                  Best Hotel Near Beach in <br />Hawaii
+                </p>
+                <p class="text-secondary ps-3 pb-3">
+                  A small river named Duden flows
+                  <br />
+                  by their place and supplies it with <br />the necessary
+                  regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <img src="img/image_2.jpg" alt="" class="img-fluid mb-2" />
+              <div class="card-title">
+                <span class="ps-3 pt-4"
+                  >ADMIN DEC. 23, 2020
+                  <font class="pt-4" id="h7">3 COMMENTS</font></span
+                >
+              </div>
+              <div class="card-text">
+                <p class="ps-3 fs-4" id="h9">
+                  Best Hotel Near Beach in <br />Hawaii
+                </p>
+                <p class="text-secondary ps-3 pb-3">
+                  A small river named Duden flows
+                  <br />
+                  by their place and supplies it with <br />the necessary
+                  regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <img src="img/image_3.jpg" alt="" class="img-fluid mb-2" />
+              <div class="card-title">
+                <span class="ps-3 pt-4"
+                  >ADMIN DEC. 23, 2020
+                  <font class="pt-4" id="h7">3 COMMENTS</font></span
+                >
+              </div>
+              <div class="card-text">
+                <p class="ps-3 fs-4" id="h9">
+                  Best Hotel Near Beach in <br />Hawaii
+                </p>
+                <p class="text-secondary ps-3 pb-3">
+                  A small river named Duden flows
+                  <br />
+                  by their place and supplies it with <br />the necessary
+                  regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 wow animate__animated animate__bounceInUp">
+            <div class="card">
+              <img src="img/image_4.jpg" alt="" class="img-fluid mb-2" />
+              <div class="card-title">
+                <span class="ps-3 pt-4"
+                  >ADMIN DEC. 23, 2020
+                  <font class="pt-4" id="h7">3 COMMENTS</font></span
+                >
+              </div>
+              <div class="card-text">
+                <p class="ps-3 fs-4" id="h9">
+                  Best Hotel Near Beach in <br />Hawaii
+                </p>
+                <p class="text-secondary ps-3 pb-3">
+                  A small river named Duden flows
+                  <br />
+                  by their place and supplies it with <br />the necessary
+                  regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- blog over  -->
+
+    <!-- insta start  -->
+
+    <div class="insta mt-5 mb-5">
+      <div class="row d-flex justify-content-evenly">
+        <div class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__bounceInUp" id="back8">
+          <div class="img6">
+            <img src="img/gallery-1.jpg" alt="" class="img-fluid" id="img8" />
+          </div>
+          <div class="insta1">
+            <i class="bi bi-instagram" id="icon2"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__bounceInUp" id="back8">
+          <div class="img6">
+            <img src="img/gallery-4.jpg" alt="" class="img-fluid" id="img8" />
+          </div>
+          <div class="insta1">
+            <i class="bi bi-instagram" id="icon2"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__bounceInUp" id="back8">
+          <div class="img6">
+            <img src="img/gallery-5.jpg" alt="" class="img-fluid" id="img8" />
+          </div>
+          <div class="insta1">
+            <i class="bi bi-instagram" id="icon2"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__bounceInUp" id="back8">
+          <div class="img6">
+            <img src="img/gallery-1.jpg" alt="" class="img-fluid" id="img8" />
+          </div>
+          <div class="insta1">
+            <i class="bi bi-instagram" id="icon2"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__bounceInUp" id="back8">
+          <div class="img6">
+            <img src="img/gallery-4.jpg" alt="" class="img-fluid" id="img8" />
+          </div>
+          <div class="insta1">
+            <i class="bi bi-instagram" id="icon2"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2 wow animate__animated animate__bounceInUp" id="back8">
+          <div class="img6">
+            <img src="img/gallery-1.jpg" alt="" class="img-fluid" id="img8" />
+          </div>
+          <div class="insta1">
+            <i class="bi bi-instagram" id="icon2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- insta over  -->
+
+    <!-- footer start  -->
+
+    <footer class="mt-5" id="footer">
+      <div class="row mt-5 d-flex justify-content-center pt-5 pb-5">
+        <div class="col-sm-12 col-lg-5 col-xl-2 mt-5">
+          <h2 class="fs-1 text-light">Unwind</h2>
+          <h3 class="text-light" id="h10">HOTEL BOOKING</h3>
+          <p class="text-secondary pt-5">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+
+          <i class="fa-brands fa-facebook fs-4 text-light pt-3 pb-5"></i
+          ><i class="fa-brands fa-instagram fs-4 text-light ps-3 pt-3 pb-5"></i
+          ><i class="fa-brands fa-twitter fs-4 text-light ps-3 pt-3 pb-5"></i>
+        </div>
+
+        <div class="col-sm-12 col-lg-5 col-xl-2 mt-5">
+          <h1 class="fs-3 text-light fw-bold pb-3">Explore</h1>
+          <h2 class="text-secondary fw-bold fs-5">
+            > About Us <br /><br />
+            > Account
+            <br /><br />
+
+            > Listing
+            <br /><br />
+
+            > Pricing Packages
+            <br /><br />
+
+            > Pricing Packages
+          </h2>
+        </div>
+
+        <div class="col-sm-12 col-lg-5 col-xl-2 mt-5">
+          <h1 class="fs-3 text-light fw-bold pb-3">Quick Links</h1>
+          <h2 class="text-secondary fw-bold fs-5">
+            > Contact Us <br /><br />
+            > Terms & Conditions
+            <br /><br />
+
+            > Privacy
+            <br /><br />
+
+            > Feedbacks
+          </h2>
+        </div>
+
+        <div class="col-sm-12 col-lg-5 col-xl-2 mt-5">
+          <h1 class="fs-3 text-light fw-bold pb-3">Categories</h1>
+          <h2 class="text-secondary fw-bold fs-5">
+            > Food & Drinks <br /><br />
+            > Hotels
+            <br /><br />
+
+            > Shopping
+            <br /><br />
+
+            > Beauty
+            <br /><br />
+
+            > ricing PackagesP
+            <br /><br />
+
+            > Bar & Club
+          </h2>
+        </div>
+
+        <div class="col-sm-12 col-lg-5 col-xl-2 mt-5">
+          <h1 class="fs-3 text-light pb-3">Have a Questions?</h1>
+          <h2 class="fs-5 text-secondary">
+            203 Fake St. Mountain View, San Francisco, California, USA
+          </h2>
+          <br />
+          <h2 class="fs-5 text-secondary">+2 392 3929 210</h2>
+          <br />
+          <h2 class="fs-5 text-secondary">info@yourdomain.com</h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer over  -->
+    <div class="name">
+      <div class="row bg-dark">
+        <div class="col-12 text-center text-light pt-3 pb-3">
+          Created By:- Ronak J Jatapara | All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    $(".counter").counterUp({
+      delay: 10,
+      time: 1000,
+    });
+    new WOW().init();
+  </script>
+</html>
