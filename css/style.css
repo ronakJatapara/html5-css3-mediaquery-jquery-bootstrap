@@ -3,121 +3,159 @@
     padding: 0;
     box-sizing: border-box;
 }
-#img1{
-    height: 60px;
-}
-#h1{
-    color: #FF5733;
+#p1{
+    padding-top: 300px;
 }
 #btn1{
-    background-color: #FF5733;
-    color: white;
+    background-color: #C5A880;
+    margin-left: 800px;
+    margin-top: 20px;
     transition: .5s;
 }
 #btn1:hover{
-    background-color: white;
-    color: #FF5733;
-    border-color: #FF5733;
-}
-#back1{
-    position: relative;
-    overflow: hidden;
-   
-
-}
-.more{
-    height: 50px;
-    width: 93%;
-    background-color: #FF5733;
-    position: absolute;
-    bottom: -50px;
-    transition: .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#back1 #img2{
-    overflow: hidden;
-}
-#back1:hover .more{
-    bottom: 0px;
-}
-#p1{
-    font-size: 12px;
+    margin-left: 810px;
 }
 #btn2{
-    width: 300px;
-    background-color: #FF5733;
+    margin-top: 20px;
+    color: white;
+    transition: .5s;
+    margin-left: 20px;
+}
+#btn2:hover{
+    background-color: white;
+    color: black;
+    margin-left: 30px;
+}
+#back1{
+    background-color: #222222;
+}
+#back2{
+    background-color: #C5A880;
+}
+#h2{
+    padding-top: 45px;
+}
+#main{
+    width: 100%;
+    position: absolute;
+    top: 830px;
+}
+#img1{
+    height: 50px;
+}
+#img2{
+    height: 100%;
+    width: 100%;
+}
+#back3{
+    transition: .5s;
+    background-color: rgb(243, 243, 243);
+}
+#back3:hover{
+    background-color: #222222;
     color: white;
 }
+#h3{
+    color: #C5A880;
+}
+#btn3{
+    background-color: #C5A880;
+    color: white;
+}
+
 #img3{
     height: 100px;
-    width: 100px;
-    border-radius: 50%;
 }
-#slider{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#main2{
-    position: relative;
-}
-.back2{
-    height: 200px;
-    width: 93%;
-    border: 1px solid black;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    background:rgba(37, 43, 73, 0.8);
+#box1{
     transition: .5s;
-
 }
-#main2:hover .back2{
-   opacity: 1;
-}
-.fa-facebook , .fa-twitter , .fa-instagram{
-  transition: .5s;
-}
-#main2:hover .fa-facebook,  #main2:hover .fa-twitter , #main2:hover .fa-instagram{
-    padding-top: 20px;
+#box1:hover{
+    background-color: #C5A880;
 }
 #btn4{
-    width: 200px;
-    background-color: #FF5733;
+    background-color: #C5A880;
     color: white;
+ position: absolute;
+ top: 120px;
+ left: 1200px;
+}
+#h3{
+    color: #C5A880;
+    padding-top: 50px;
+    padding-left: 400px;
+}
+#p3{
+    color: white;
+
+    padding-left: 400px;
+}
+#h4{
+    color: #C5A880;
+}
+#btn5{
+    background-color: #C5A880;
+    color: white;
+}
+#back5{
     transition: .5s;
 }
-#btn4:hover{
-    background-color: white;
-    color: #FF5733;
-    border-color: #FF5733;
+#back5:hover{
+    background-color: #222222;
 }
-#three{
+#h5{
+    color: black;
+}
+#back5:hover  #h5{
     color: white;
+}
+#h6{
+    color: #C5A880;
+}
+#icon1{
+    color: #C5A880;
+}
+#img5{
+    height: 100px;
+}
+#h7{
+    color: #C5A880;
+}
+#back7{
+    background-color: #222222;
+}
+#h8{
+    color: white;
+}
+#h9{
+    color: black;
     transition: .5s;
 }
-#three:hover{
-    color: #FF5733;
+#h9:hover{
+    color: #C5A880;
 }
-
-
-@media(max-width:900px){
-    .back2{
-        width: 95%;
-        height:80%;
-    }
+#back8{
+    position: relative;
+    transition: 1s;
 }
-
-@media(max-width:500px){
-    .back2{
-        width: 95%;
-        height:80%;
-    }
+.insta1{
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    display: none;
+    transition: 1s;
+}
+#icon2{
+    color: #000000;
+    font-size: 30px;
+}
+#back8:hover .insta1{
+     display: block;
+     
+}
+#img8{
+    height: 200px;
+    width: 400px;
+}
+#footer{
+    background-color:#1A1A1A;
 }
